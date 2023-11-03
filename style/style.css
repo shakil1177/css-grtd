@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  background-color: black;
+  color: white;
+}
+
+.grid__container {
+  height: 100vh;
+  display: grid;
+  grid-template-areas:
+    "S S A L L"
+    "S S M M T"
+    "S S N N T";
+  gap: 20px;
+}
+
+.box {
+  background-color: crimson;
+  border: 1px solid white;
+}
+.box_one {
+  grid-area: S;
+}
+
+.box_two {
+  grid-area: A;
+}
+
+.box_three {
+  grid-area: L;
+}
+
+.box_four {
+  grid-area: M;
+}
+
+.box_five {
+  grid-area: N;
+}
+
+.box_six {
+  grid-area: T;
+}
+
+@media screen and (max-width: 1280px) {
+  .box {
+    background-color: mediumaquamarine;
+  }
+}
+@media screen and (max-width: 768px) {
+  .box {
+    background-color: royalblue;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .box {
+    background-color: pink;
+  }
+}
